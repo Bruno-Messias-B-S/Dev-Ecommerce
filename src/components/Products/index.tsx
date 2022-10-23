@@ -15,13 +15,16 @@ export const Products = () => {
 
     useEffect( () => {
         loadProducts()
+
+        setTimeout( () => {
+            setLoading(true)
+        }, 1000)
     }, [])
 
     const loadProducts = async () => {
         setLoading(false)
         let response = await apiData.getData();
         setProducts(response.products)
-        setLoading(true)
     }
 
     return (
@@ -31,7 +34,7 @@ export const Products = () => {
                 <C.ProductsContainer>
                     {products.map( (item, index) => (
                         <C.Products key={index}>
-                            <Skeleton width={`${100}%`} height={`${300}px`} borderRadius={10}/>
+                            <Skeleton width={`${100}%`} height={`${320}px`} borderRadius={10}/>
                         </C.Products>
                     ))}
                 </C.ProductsContainer>
