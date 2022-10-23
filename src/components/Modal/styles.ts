@@ -168,12 +168,10 @@ export const Finalizar = styles.div`
 `;
 
 export const Imagem = styles.div`
-    background-color:red;
     display:flex;
     justify-content:center;
     align-items:center;
     width:50px;
-    background-color:red;
 
     .closeBtn {
         position:absolute;
