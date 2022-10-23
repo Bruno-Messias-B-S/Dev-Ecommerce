@@ -20,7 +20,7 @@ export const Products = () => {
     const loadProducts = async () => {
         setLoading(false)
         let response = await apiData.getData();
-        setProducts(response)
+        setProducts(response.products)
         setLoading(true)
     }
 
