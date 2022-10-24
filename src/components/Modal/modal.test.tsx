@@ -4,9 +4,9 @@ import { Provider } from "react-redux";
 import { store } from "../../store";
 
 test('should close modal', () => {
-    const closeModal = jest.fn()
+    const modalClose = jest.fn()
 
-    render(<Provider store={store}><AiFillCloseCircle onClick={closeModal}/></Provider>);
-
-    expect(closeModal).toBeCalled
+    render(<Provider store={store}><AiFillCloseCircle onClick={modalClose}></AiFillCloseCircle></Provider>);
+        
+    expect(modalClose).toBeCalled
 })

@@ -23,7 +23,7 @@ export const Modal = () => {
             <C.CartOpen>
                 <C.Title>
                     <h3>Carrinho<br/> de Compras</h3>
-                    <AiFillCloseCircle className="icon" size={40} color={'black'} onClick={() => dispatch(closeModal())}/>
+                    <AiFillCloseCircle className="icon" size={40} color={'black'} onClick={() => dispatch(closeModal())}></AiFillCloseCircle>
                 </C.Title>
 
                 <C.ItensContainer>
