@@ -12,13 +12,13 @@ export const NavBar = () => {
     return (
         <C.Container>
             <C.Logo>
-                <C.MKS>
-                    <h3 className="mks">MKS</h3>
-                </C.MKS>
+                <C.Dev>
+                    <h3 className="dev">Dev</h3>
+                </C.Dev>
 
-                <C.Sistemas>
-                    <h5 className="sistemas">Sistemas</h5>
-                </C.Sistemas>
+                <C.Ecommerce>
+                    <h5 className="ecommerce">E-Commerce</h5>
+                </C.Ecommerce>
             </C.Logo>
             
             <C.Carrinho data-testid={'modal'} onClick={() => dispatch(openModal())}>

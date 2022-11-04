@@ -2,7 +2,7 @@ import styles from 'styled-components';
 
 export const Container = styles.div`
     width:100%;
-    height:101px;
+    height:80px;
     background-color:#0F52BA;
     display:flex;
     justify-content:space-between;
@@ -22,40 +22,40 @@ export const Logo = styles.div`
     height:30px;
 `;
 
-export const MKS = styles.div`
+export const Dev = styles.div`
     color:white;
 
-    .mks {
+    .dev {
         font-weight: 600;
         font-weight: 600;
-        font-size: 40px;
+        font-size: 35px;
         line-height: 19px;
     }
 
 
     @media (min-width:320px) and (max-width:425px) {
-        .mks {
+        .dev {
             font-size:32px;
         }
     }
 `;
 
-export const Sistemas = styles.div`
+export const Ecommerce = styles.div`
     display:flex;
     align-items:end;
     height:100%;
-    margin-left:10px;
+    margin-left:7px;
     color:white;
 
-    .sistemas {
+    .ecommerce {
         font-weight: 300;
-        font-size: 20px;
+        font-size: 17px;
         line-height: 19px;
     }
 
 
     @media (min-width:320px) and (max-width:425px) {
-        .sistemas {
+        .ecommerce {
             font-size:16px;
         }
     }
